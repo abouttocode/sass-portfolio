@@ -45,6 +45,27 @@
 
 
 @include media-lg {
+
+    .nav {
+        visibility: visible;
+        
+        .menu-nav {
+            display: block;
+            translate: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            &__item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+            &__link {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
     .projects {
         &__items {
             grid-template-columns: repeat(3, 1fr);
@@ -56,6 +77,27 @@
 }
 
 @include media-xl {
+
+    .nav {
+        visibility: visible;
+        
+        .menu-nav {
+            display: block;
+            translate: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            &__item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+            &__link {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
     .projects__bio-image {
         height: 50vh
     }
