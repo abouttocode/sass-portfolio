@@ -1,6 +1,21 @@
 @include media-md{
     .menu-btn {
-        visibility: hidden;
+        visibility: visible;
+        padding: 0;
+        margin: 0;
+        
+        &__burger {
+            &.open {
+                &::before {
+                    transform: rotate(45deg) translate(1.5px, 0px) scale(0.5, 0.5);
+                }
+                &::after {
+                    width: 28px;
+                    transform: rotate(-45deg) translate(11px, -10px) scale(0.5, 0.5);
+                }
+            }
+    
+        }
     }
 
     .nav {
